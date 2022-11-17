@@ -24,6 +24,14 @@ public class Filho {
         this.peso = peso;
     }
 
+    public void imprimeFilho(){
+        System.out.println("Nome: " + this.nome + 
+                "\nData Nascimento: " + this.dataNascimento +
+                "\nSexo: " + this.sexo +
+                "\nAltura: " + this.altura +
+                "\nPeso: " + this.peso);
+    }
+    
     public String getNome() {
         return nome;
     }

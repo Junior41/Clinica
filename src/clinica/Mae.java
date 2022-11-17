@@ -21,7 +21,13 @@ public class Mae {
         this.endereco = endereco;
         this.telefone = telefone;
     }
-
+    public void imprimeMae(){
+        System.out.println("CPF: " + this.CPF + 
+                "\nNome: " + this.nome +
+                "\nData nascimento: " + this.dataNascimento +
+                "\nEndereco: " + this.endereco +
+                "\nTelefone: " + this.telefone);
+    }
     public String getCPF() {
         return CPF;
     }

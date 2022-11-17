@@ -10,15 +10,21 @@ package clinica;
  */
 public class Medico {
     private int CRM;
-    private String nome, especializacao;
+    private String nome, especialidade;
 
-    public Medico(int CRM, String nome, String especializacao) {
+    public Medico(int CRM, String nome, String especialidade) {
         this.CRM = CRM;
         this.nome = nome;
-        this.especializacao = especializacao;
+        this.especialidade = especialidade;
     }
 
     public Medico() {
+    }
+    
+    public void imprimeMedico(){
+        System.out.println("CRM: " + this.CRM + 
+                "\nNome: " + this.nome + 
+                "\nEspecializacao: " + this.especialidade);
     }
 
     public int getCRM() {
@@ -29,8 +35,8 @@ public class Medico {
         return nome;
     }
 
-    public String getEspecializacao() {
-        return especializacao;
+    public String getEspecialidade() {
+        return especialidade;
     }
 
     public void setCRM(int CRM) {
@@ -41,8 +47,8 @@ public class Medico {
         this.nome = nome;
     }
 
-    public void setEspecializacao(String especializacao) {
-        this.especializacao = especializacao;
+    public void setEspecialidade(String especialidade) {
+        this.especialidade = especialidade;
     }
     
     

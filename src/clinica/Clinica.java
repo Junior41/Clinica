@@ -14,7 +14,7 @@ public class Clinica {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        ConexaoBD conexao = new ConexaoBD();
+        //ConexaoBD conexao = new ConexaoBD();
         /*
         float peso = (float)3.4;
         float altura = (float)4.0;
@@ -50,7 +50,9 @@ public class Clinica {
         else
             System.out.println("Filho n encontrado");
         */
-        conexao.ListarPartos();
+        //conexao.ListarPartos();
+        MenuPrincipal menu = new MenuPrincipal();
+        menu.setVisible(true);
 }
     
 }

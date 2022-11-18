@@ -64,7 +64,7 @@ public class ConexaoBD {
 
                 Mae mae = new Mae(resultadoMae.getString("CPF"),
                         resultadoMae.getString("nome"),
-                        resultadoMae.getString("dataNacimento"),
+                        resultadoMae.getString("dataNascimento"),
                         resultadoMae.getNString("endereco"),
                         resultadoMae.getNString("telefone"));
                 
@@ -119,7 +119,7 @@ public class ConexaoBD {
         
         Connection conexao = realizaConexaoMySQL();
         
-        String insereMae = "INSERT INTO clinica.mae (nome, dataNacimento,"
+        String insereMae = "INSERT INTO clinica.mae (nome, dataNascimento,"
                 + "CPF, telefone, endereco) VALUES (?,?,?,?,?)";
         
         try{
@@ -195,7 +195,7 @@ public class ConexaoBD {
                 resultado = new Mae();
                 resultado.setCPF(CPF);
                 resultado.setNome(res.getString("nome"));
-                resultado.setDataNascimento(res.getString("dataNacimento"));
+                resultado.setDataNascimento(res.getString("dataNascimento"));
                 resultado.setEndereco(res.getString("endereco"));
                 resultado.setTelefone(res.getString("telefone"));
             }
